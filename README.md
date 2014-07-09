@@ -7,3 +7,6 @@ This repository contains the 2 files requested by the Developing Data Product as
 
 * server.R
 * ui.R
+
+The online Shiny version can be viewed here:
+https://ssalvaggio.shinyapps.io/DailyPhysicalActivity/
