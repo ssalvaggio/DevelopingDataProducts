@@ -5,6 +5,17 @@ shinyUI(fluidPage(
     p('Salvino A. Salvaggio, PhD - July 2014'),br(),
     # Info
     h4('Supporting documentation'),
+        p('The World Health Organisation consider that obesity, diabetes, and 
+          hypertension are a new plague that is going to cause millions of deaths 
+          and sick people as well as a dramatic --and unsustainable-- increase 
+          in healthcare costs. The Center for Diseae Control and Prevention', 
+          a(href='http://www.cdc.gov/obesity/data/adult.html', 'estimated'),
+          'that the annual medical 
+          cost of obesity in the U.S. was $147 billion in 2008 U.S. dollars, while 
+          the medical costs for people who are obese were $1,429 higher than those of normal weight. 
+          Fortunately, prevention of chronic metabolic diseases is quite simple: 
+          a lifelong balanced nutrition coupled with an active lifestyle are mostly
+          sufficient to protect us.'),
         p('The data analyzed come from a Fitbit activity monitor and Fitbit 
             app installed on a smartphone. Each row provides the daily figures for several variables 
             collected on one single individual over the period 24 Nov 2013 - 10 May 2014. 
