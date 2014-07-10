@@ -12,10 +12,9 @@ shinyServer(function(input, output) {
     df <- reactive({ data.frame(V.Active.Min=predictor()) })
     predicted <- reactive({ round(as.numeric(predict(fit, newdata=df())),0) })
     
-    # Generate head(n) of the dataset
+    # Generate sample of the dataset
     output$head <- renderTable({ 
         n_rows = as.numeric(input$n_rows)
-#       head(data, n_rows)
     a <- data[sample(nrow(data), n_rows, replace = FALSE),]
     a[order(as.numeric(row.names(a))),]
     })
