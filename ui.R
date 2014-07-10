@@ -23,7 +23,7 @@ shinyUI(fluidPage(
             Complete dataset and info available ', 
             a(href='https://dl.dropboxusercontent.com/u/278538/Fitbit_data_20140621.zip', 'here'),'.'),
         p('To interact with this page, you can use the widgets in the lefthand column: 
-             \'Overview\' allows to select how many rows of the dataset you want to preview;
+             \'Overview\' allows to raandomly sample the rows of the dataset to be previewed;
             in \'Summary\' you can choose the variables to summarize and display; \'Boxplot\' 
             and the related Boxplot tab let you choose which variable to see as a boxplot; and \'Prediction\'
             requires a number of minutes as a predictor and predicts the expected daily calories
@@ -35,7 +35,7 @@ shinyUI(fluidPage(
             # Input number of rows to visualize        
                     h4('Overview'),
                     selectInput(inputId = 'n_rows', h5('Number of observations to view:'), 
-                                c('5 rows' = 5, '10 rows' = 10, '20 rows' = 20), 
+                                c('5 rows' = 5, '10 rows' = 10, '15 rows' = 15), 
                                 selected=5),
                     HTML('<hr style="border-color: lightgrey;">'),
             

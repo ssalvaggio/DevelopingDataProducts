@@ -15,7 +15,9 @@ shinyServer(function(input, output) {
     # Generate head(n) of the dataset
     output$head <- renderTable({ 
         n_rows = as.numeric(input$n_rows)
-       head(data, n_rows)
+#       head(data, n_rows)
+    a <- data[sample(nrow(data), n_rows, replace = FALSE),]
+    a[order(as.numeric(row.names(a))),]
     })
     
     # Generate a summary of the requested variables
